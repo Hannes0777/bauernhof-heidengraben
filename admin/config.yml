@@ -1,0 +1,175 @@
+# ============================================================
+#  Sveltia CMS – Konfiguration für Bauernhof am Heidengraben
+#  Bearbeitet werden JSON-Dateien im Ordner /content/
+# ============================================================
+
+backend:
+  name: github
+  repo: Hannes0777/bauernhof-heidengraben
+  branch: main
+  # Eigener Cloudflare-Worker nur für diese Website: E-Mail/Passwort-Login,
+  # kein GitHub-Account nötig, kein Zugriff auf andere Websites möglich.
+  base_url: https://cms-auth-bauernhof-heidengraben.ehmann-hannes07.workers.dev
+
+media_folder: uploads
+public_folder: /uploads
+
+media_libraries:
+  default:
+    config:
+      slugify_filename: true
+
+locale: de
+
+# ============================================================
+#  SAMMLUNGEN
+# ============================================================
+
+collections:
+
+  # ----------------------------------------------------------
+  #  ANGEBOTE (zeitlich befristet, erscheinen automatisch als
+  #  Banner im Hero, solange "Gültig von/bis" zutrifft)
+  # ----------------------------------------------------------
+  - name: angebote
+    label: "🏷️ Angebote"
+    description: "Zeitlich befristete Angebote (z.B. wöchentlich wechselnd). Ein Angebot erscheint automatisch als Banner auf der Startseite, solange das heutige Datum zwischen 'Gültig von' und 'Gültig bis' liegt – danach verschwindet es von selbst, ohne dass Sie etwas löschen müssen."
+    files:
+      - name: angebote
+        label: "Angebote verwalten"
+        file: content/angebote.json
+        fields:
+          - name: angebote
+            label: "Angebote"
+            label_singular: "Angebot"
+            widget: list
+            required: false
+            min: 0
+            summary: "{{titel}} ({{gueltig_von}} – {{gueltig_bis}})"
+            fields:
+              - name: titel
+                label: "Titel des Angebots"
+                widget: string
+                hint: "z.B. Frische Eierlikör-Charge"
+              - name: hinweis
+                label: "Zusatz-Hinweis (optional)"
+                widget: string
+                required: false
+                hint: "z.B. 'nur solange der Vorrat reicht'"
+              - name: gueltig_von
+                label: "Gültig von"
+                widget: datetime
+                format: "YYYY-MM-DD"
+                date_format: "DD.MM.YYYY"
+                time_format: false
+              - name: gueltig_bis
+                label: "Gültig bis"
+                widget: datetime
+                format: "YYYY-MM-DD"
+                date_format: "DD.MM.YYYY"
+                time_format: false
+                hint: "Ab diesem Datum verschwindet das Angebot automatisch von der Website."
+
+  # ----------------------------------------------------------
+  #  PRODUKTE IM HOFLADEN
+  # ----------------------------------------------------------
+  - name: produkte
+    label: "🥚 Produkte im Hofladen"
+    files:
+      - name: produkte
+        label: "Produkte verwalten"
+        file: content/produkte.json
+        fields:
+          - name: produkte
+            label: "Produkte"
+            label_singular: "Produkt"
+            widget: list
+            summary: "{{titel}}"
+            fields:
+              - name: titel
+                label: "Produktname"
+                widget: string
+              - name: text
+                label: "Kurzbeschreibung"
+                widget: string
+
+  # ----------------------------------------------------------
+  #  SEITENEINSTELLUNGEN
+  # ----------------------------------------------------------
+  - name: einstellungen
+    label: "⚙️ Einstellungen"
+    files:
+
+      - name: siteinfo
+        label: "Allgemeine Seiteninfos"
+        file: content/siteinfo.json
+        fields:
+          - name: site_title
+            label: "Seitentitel (erscheint im Browser-Tab)"
+            widget: string
+          - name: meta_description
+            label: "Kurzbeschreibung für Suchmaschinen"
+            widget: text
+            hint: "Ca. 150 Zeichen – wird von Google in den Suchergebnissen angezeigt."
+
+      - name: hero
+        label: "Startseite – Willkommensbereich"
+        file: content/hero.json
+        fields:
+          - name: eyebrow
+            label: "Kurzer Hinweistext über der Hauptüberschrift"
+            widget: string
+          - name: title
+            label: "Hauptüberschrift"
+            widget: string
+          - name: lead
+            label: "Einleitungstext"
+            widget: text
+
+      - name: kontakt
+        label: "Kontakt & Adresse"
+        file: content/kontakt.json
+        fields:
+          - name: strasse
+            label: "Straße + Hausnummer"
+            widget: string
+          - name: ort
+            label: "PLZ + Ort"
+            widget: string
+          - name: telefon
+            label: "Telefonnummer (Anzeigeformat, z.B. 07382 9387603)"
+            widget: string
+          - name: telefon_href
+            label: "Telefonnummer für Links (z.B. 4973829387603, ohne +)"
+            widget: string
+            hint: "Ohne Leerzeichen und ohne führende 0, mit Ländervorwahl 49"
+          - name: email
+            label: "E-Mail-Adresse"
+            widget: string
+          - name: oeffnungszeiten
+            label: "Öffnungszeiten-Text"
+            widget: string
+            hint: "z.B. 'Täglich 24h, Selbstbedienung'"
+          - name: map_embed_url
+            label: "Google-Maps Einbettungs-URL"
+            widget: string
+            hint: "Nicht verändern, außer der Hof zieht um oder die Adresse ändert sich."
+
+      - name: rechtliches
+        label: "⚖️ Rechtliches (Impressum)"
+        description: >
+          Zusätzliche Angaben für das Impressum. Bitte den vollständigen Namen des/der
+          Betriebsinhaber:in ergänzen – das ist gesetzlich Pflicht (§ 5 DDG). Im Zweifel
+          vorher mit einem Steuerberater/Anwalt abstimmen, diese Website kann keine
+          Rechtsberatung ersetzen.
+        file: content/rechtliches.json
+        fields:
+          - name: inhaber_name
+            label: "Vollständiger Name des/der Betriebsinhaber:in"
+            widget: string
+            required: false
+            hint: "Pflichtangabe fürs Impressum – bitte ausfüllen."
+          - name: ustid
+            label: "USt-IdNr. (falls vorhanden)"
+            widget: string
+            required: false

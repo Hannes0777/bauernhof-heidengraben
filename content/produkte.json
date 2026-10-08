@@ -1,0 +1,10 @@
+{
+  "produkte": [
+    { "titel": "Frische Milch", "text": "Täglich aus dem Kühltank direkt ins Regal." },
+    { "titel": "Freilandeier", "text": "Von Hühnern, die auf der Weide am Wallgraben laufen." },
+    { "titel": "Eierlikör", "text": "Nach Hausrezept, in kleinen Chargen." },
+    { "titel": "Nudeln aus Freilandeiern", "text": "Hausgemacht, mit den eigenen Eiern." },
+    { "titel": "Rindfleischpakete", "text": "Vom eigenen Rind, portioniert." },
+    { "titel": "Geschenkkörbe", "text": "Zusammengestellt aus dem, was gerade frisch ist." }
+  ]
+}

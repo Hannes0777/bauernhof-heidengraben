@@ -1,0 +1,10 @@
+Bauernhof am Heidengraben (Hofladen, Familie Kalmbach)
+Strohweiler Steig 1, 72582 Grabenstetten
+Telefon: 07382 9387603
+E-Mail: bauernhof-am-heidengraben@web.de
+
+Status: Echter Kunde, hat zugesagt. Noch keine eigenen Wünsche/Infos/Fotos erhalten,
+Website aus öffentlich recherchierten Fakten (Google Maps/Verzeichnisse) aufgebaut.
+Offene Punkte: vollständiger Name Betriebsinhaber:in (Pflichtangabe Impressum),
+echte Fotos vom Hof, Bestätigung aller Fakten durch den Kunden, GitHub-Repo +
+Cloudflare-Worker-Deploy noch nicht angelegt.
