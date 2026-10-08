@@ -3,7 +3,7 @@
   const form = document.getElementById('contact-form');
   if (!form) return;
 
-  const ENDPOINT = 'https://contact-form-bauernhof-heidengraben.workers.dev';
+  const ENDPOINT = 'https://contact-form-bauernhof-heidengraben.ehmann-hannes07.workers.dev';
   const statusEl = form.querySelector('.form-status');
   const submitBtn = form.querySelector('button[type="submit"]');
 
