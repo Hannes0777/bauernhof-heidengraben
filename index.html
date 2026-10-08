@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Hofladen Grabenstetten | Bauernhof am Heidengraben</title>
-<meta name="description" content="Hofladen am Heidengraben in Grabenstetten: frische Milch, Freilandeier, Eierlikör und Rindfleisch direkt ab Hof — täglich 24h in Selbstbedienung.">
+<meta name="description" content="Hofladen am Heidengraben in Grabenstetten: frische Milch, Freilandeier, Eierlikör und Rindfleisch direkt ab Hof — täglich 24h in Selbstbedienung, ganz ohne Kasse.">
 <link rel="canonical" href="https://bauernhof-am-heidengraben.de/index.html">
 <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
 <link rel="stylesheet" href="css/style.css">
@@ -84,10 +84,10 @@
     <div class="brandrow">
       <a class="brand" href="index.html">Bauernhof am Heidengraben<span class="label">Grabenstetten · Schwäbische Alb</span></a>
       <nav class="offset">
-        <a href="index.html#angebot">Angebot</a>
-        <a href="hofladen.html">Hofladen</a>
-        <a href="heidengraben.html">Heidengraben</a>
-        <a href="kontakt.html">Kontakt</a>
+        <a href="#angebot">Angebot</a>
+        <a href="#produkte">Hofladen</a>
+        <a href="#heidengraben">Heidengraben</a>
+        <a href="#kontakt">Kontakt</a>
       </nav>
       <button class="nav-toggle" aria-label="Menü öffnen" aria-expanded="false" aria-controls="nav-overlay">
         <span class="nav-toggle__bars" aria-hidden="true"><span></span><span></span><span></span></span>
@@ -103,10 +103,10 @@
     <button class="nav-overlay__close">Schließen ✕</button>
   </div>
   <nav>
-    <a href="index.html" aria-current="page">Start</a>
-    <a href="hofladen.html">Hofladen</a>
-    <a href="heidengraben.html">Heidengraben</a>
-    <a href="kontakt.html">Kontakt</a>
+    <a href="#angebot">Angebot</a>
+    <a href="#produkte">Hofladen</a>
+    <a href="#heidengraben">Heidengraben</a>
+    <a href="#kontakt">Kontakt</a>
   </nav>
   <div class="nav-overlay__footer">Strohweiler Steig 1 · 72582 Grabenstetten<br><a href="tel:+4973829387603">07382 9387603</a></div>
 </div>
@@ -114,17 +114,20 @@
 <main id="main">
 
   <section class="hero" id="angebot">
-    <p class="label" id="hero-eyebrow" style="margin-bottom:0.8rem;">Hofladen am keltischen Oppidum</p>
-    <h1 id="hero-title">Der Hof liegt dort, wo die Kelten vor 2000 Jahren ihren Wall gezogen haben.</h1>
-    <p class="lead" id="hero-lead">Rund um unseren Hof verläuft der Heidengraben — eine der größten keltischen Befestigungsanlagen Europas. Wir bewirtschaften das Land, auf dem einst Handel und Handwerk blühten, heute mit Kühen, Schafen, Schweinen und Hühnern.</p>
+    <div class="hero-split">
+      <div>
+        <p class="label" id="hero-eyebrow" style="margin-bottom:0.8rem;">Hofladen Grabenstetten · Selbstbedienung</p>
+        <h1 id="hero-title">Niemand steht an der Kasse. Trotzdem stimmt die Rechnung — seit Jahren.</h1>
+        <p class="lead" id="hero-lead">Unser Hofladen ist Tag und Nacht offen, ganz ohne Personal. Man nimmt sich, was man braucht, und legt das Geld in die Kasse — mitten auf der Schwäbischen Alb, direkt am keltischen Heidengraben.</p>
+      </div>
+      <div class="photo">
+        <img src="assets/images/hofladen-regal.webp" width="640" height="480" alt="Innenansicht des Hofladens: Regale mit Freilandeiern, Nudeln und Milch, handgeschriebene Preisliste an der Tafel" loading="eager" fetchpriority="high">
+      </div>
+    </div>
 
     <div class="angebot" id="angebot-banner">
       <span class="label">Fundstück der Woche</span>
       <span><b id="angebot-titel">Frische Eierlikör-Charge</b><small id="angebot-zusatz">nur solange der Vorrat reicht · bis Sonntag</small></span>
-    </div>
-
-    <div class="photo">
-      <img src="assets/images/eierhaeusle-aussen.webp" width="640" height="480" alt="Das Eierhäusle am Bauernhof am Heidengraben: Holzhütte mit Milch- und Eier-Verkauf in Selbstbedienung" loading="eager" fetchpriority="high">
     </div>
   </section>
 
@@ -135,16 +138,16 @@
     </svg>
   </div>
 
-  <section>
-    <h2>Ab Hof, ohne Umweg</h2>
-    <p class="lead" style="margin-bottom:0;">Selbstbedienung, 24 Stunden geöffnet — man nimmt, was man braucht, und zahlt ehrlich in die Kasse. <a href="hofladen.html">Mehr über den Hofladen →</a></p>
+  <section id="produkte">
+    <h2>Was im Regal steht</h2>
+    <p class="lead" style="margin-bottom:0;">Alles kommt vom eigenen Hof — Kühe, Hühner und Schweine stehen keine zwei Minuten vom Verkaufsregal entfernt.</p>
     <div class="grid-produkte" id="produkte-grid">
-      <div class="produkt"><h3>Frische Milch</h3><p>Täglich aus dem Kühltank direkt ins Regal.</p></div>
-      <div class="produkt"><h3>Freilandeier</h3><p>Von Hühnern, die auf der Weide am Wallgraben laufen.</p></div>
-      <div class="produkt"><h3>Eierlikör</h3><p>Nach Hausrezept, in kleinen Chargen.</p></div>
-      <div class="produkt"><h3>Nudeln aus Freilandeiern</h3><p>Hausgemacht, mit den eigenen Eiern.</p></div>
-      <div class="produkt"><h3>Rindfleischpakete</h3><p>Vom eigenen Rind, portioniert.</p></div>
-      <div class="produkt"><h3>Geschenkkörbe</h3><p>Zusammengestellt aus dem, was gerade frisch ist.</p></div>
+      <div class="produkt"><h3>Frische Milch</h3><p>Täglich aus dem Kühltank direkt ins Regal gefüllt, kühl gelagert bis zur Abholung.</p></div>
+      <div class="produkt"><h3>Freilandeier</h3><p>Von Hühnern, die draußen auf der Weide am Wallgraben laufen.</p></div>
+      <div class="produkt"><h3>Eierlikör</h3><p>Nach Hausrezept, in kleinen Chargen angesetzt — nicht immer vorrätig.</p></div>
+      <div class="produkt"><h3>Nudeln aus Freilandeiern</h3><p>Hausgemacht, mit den eigenen Eiern, in verschiedenen Formen.</p></div>
+      <div class="produkt"><h3>Rindfleischpakete</h3><p>Vom eigenen Rind, portioniert und tiefgekühlt zum Mitnehmen.</p></div>
+      <div class="produkt"><h3>Geschenkkörbe</h3><p>Zusammengestellt aus dem, was gerade frisch ist — ideal als Mitbringsel.</p></div>
     </div>
   </section>
 
@@ -152,33 +155,91 @@
     <div class="immer-offen">
       <div class="clock">24h</div>
       <div>
-        <h3>Täglich geöffnet, auch an Feiertagen</h3>
-        <p>Kein Ladenschluss, keine Mittagspause. Der Hofladen ist immer zugänglich — wer abends um zehn noch Milch braucht, bekommt sie auch um zehn.</p>
+        <h3>So funktioniert die Selbstbedienung</h3>
+        <p>Regal öffnen, nehmen was gebraucht wird, Betrag ablesen und passend in die Kasse legen. Kein Personal, keine Öffnungszeiten, keine Ausnahme an Sonn- und Feiertagen — der Laden ist einfach immer da, auch wenn abends um zehn noch Milch fehlt.</p>
       </div>
     </div>
   </section>
+
+  <section class="story">
+    <div>
+      <h2>Warum ohne Kasse funktioniert, was woanders nicht geht</h2>
+      <p>Das Selbstbedienungsprinzip ist kein Marketing-Trick, sondern einfach die ehrlichste Art, einen Hofladen auf dem Land zu betreiben: keine Öffnungszeiten, an die sich jemand halten müsste, keine Kasse, die jemand besetzen müsste.</p>
+      <p>Wer größere Mengen braucht — zum Beispiel für eine Familienfeier oder als Geschenk — kann sich auch vorab melden. <a href="#kontakt">Kontakt aufnehmen →</a></p>
+    </div>
+    <div class="photo">
+      <img src="assets/images/frische-eier.webp" width="640" height="496" alt="Frische Freilandeier im Strohnest" loading="lazy">
+    </div>
+  </section>
+
+  <div class="ringwall" aria-hidden="true">
+    <svg viewBox="0 0 1000 48" preserveAspectRatio="none">
+      <path d="M0,10 Q120,42 240,16 T480,30 Q600,6 720,24 T960,14 L1000,18"
+            fill="none" stroke="#8a5a3a" stroke-width="2" opacity="0.6"/>
+    </svg>
+  </div>
 
   <section class="story" id="heidengraben">
     <div>
-      <h2>1000 Jahre Geschichte, zwei Minuten zu Fuß</h2>
-      <p>Der Heidengraben war einst religiöses und wirtschaftliches Zentrum der Kelten auf der Alb — Handel, Handwerk, Leben, bis kurz vor Christi Geburt. Heute führt der Wanderweg über den Wall direkt an unseren Weiden vorbei.</p>
-      <p>Wer uns besucht, sieht beides: die Spuren von vor 2000 Jahren und einen Hof, der heute noch genauso unkompliziert funktioniert — ohne Kasse, ohne Personal, nur mit Vertrauen. <a href="heidengraben.html">Mehr zur Geschichte des Heidengraben →</a></p>
+      <p class="label" style="margin-bottom:0.8rem;">Lage</p>
+      <h2>Der Hof liegt im keltischen Oppidum Heidengraben</h2>
+      <p>Der Heidengraben erstreckt sich über knapp 17 Quadratkilometer auf der Hochfläche zwischen Grabenstetten, Erkenbrechtsweiler und Hülben — um 100 vor Christus die größte befestigte spätkeltische Siedlung des europäischen Festlands. Unser Hof bewirtschaftet einen Teil genau dieser Fläche; wer über den Wanderweg am Wallgraben entlanggeht, kommt praktisch automatisch an unseren Weiden vorbei.</p>
+      <p>Der Aussichtsturm und das Heidengrabenzentrum liegen nur wenige Gehminuten entfernt — ein guter Zwischenstopp vor oder nach dem Einkauf.</p>
     </div>
-    <div class="placeholder" style="margin-top:0;">[ Platzhalter: Foto Aussichtsturm/Wallgraben in Sichtweite zum Hof ]</div>
+    <div class="photo">
+      <img src="assets/images/huehner-weide.webp" width="640" height="480" alt="Freilandhühner auf der Weide am Hof, im Hintergrund die Hochfläche der Alb" loading="lazy">
+    </div>
   </section>
 
   <section id="kontakt">
-    <h2>Anfahrt</h2>
+    <p class="label" style="margin-bottom:0.8rem;">Kontakt &amp; Anfahrt</p>
+    <h2 style="font-size:1.8rem;">Für größere Bestellungen oder Fragen erreichen Sie uns so</h2>
+    <p class="lead">Für den täglichen Einkauf brauchen Sie uns nicht zu erreichen — der Hofladen ist durchgehend in Selbstbedienung geöffnet. Bei Geschenkkörben zu besonderen Anlässen oder sonstigen Fragen melden Sie sich gerne direkt.</p>
+
     <div class="split">
       <div class="fundkarte">
-        <p class="label">Anfahrt</p>
+        <p class="label">Steckbrief</p>
         <p data-kontakt="oeffnungszeiten">Täglich 24h, Selbstbedienung</p>
         <p><a href="tel:+4973829387603" data-kontakt="telefon">07382 9387603</a></p>
+        <p><a href="mailto:bauernhof-am-heidengraben@web.de" data-kontakt="email">bauernhof-am-heidengraben@web.de</a></p>
         <p class="addr" data-kontakt="strasse-ort">Strohweiler Steig 1, 72582 Grabenstetten</p>
-        <a class="btn btn-outline" href="kontakt.html" style="margin-top:1.2rem;">Kontaktseite &amp; Karte →</a>
       </div>
       <iframe class="map-frame" data-kontakt="map" src="https://www.google.com/maps?q=Strohweiler+Steig+1,+72582+Grabenstetten&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Karte: Bauernhof am Heidengraben, Grabenstetten"></iframe>
     </div>
+
+    <h3 style="margin-top:3rem;">Nachricht senden</h3>
+    <form id="contact-form" class="form-grid" novalidate>
+      <div class="hp-field" aria-hidden="true">
+        <label for="website">Website</label>
+        <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
+      </div>
+
+      <div>
+        <label for="name">Name *</label>
+        <input type="text" id="name" name="name" required autocomplete="name">
+      </div>
+
+      <div>
+        <label for="email">E-Mail *</label>
+        <input type="email" id="email" name="email" required autocomplete="email">
+      </div>
+
+      <div>
+        <label for="telefon">Telefon (optional)</label>
+        <input type="tel" id="telefon" name="telefon" autocomplete="tel">
+      </div>
+
+      <div>
+        <label for="nachricht">Nachricht *</label>
+        <textarea id="nachricht" name="nachricht" rows="5" required></textarea>
+      </div>
+
+      <div>
+        <button type="submit" class="btn btn-moss">Nachricht senden</button>
+        <p class="form-note">Für den normalen Einkauf ist keine Anmeldung nötig — der Hofladen ist einfach immer offen.</p>
+        <p class="form-status" role="status" hidden></p>
+      </div>
+    </form>
   </section>
 
 </main>
@@ -197,9 +258,9 @@
       <h5>Seite</h5>
       <ul>
         <li><a href="tel:+4973829387603" data-kontakt="telefon">07382 9387603</a></li>
-        <li><a href="hofladen.html">Hofladen</a></li>
-        <li><a href="heidengraben.html">Heidengraben</a></li>
-        <li><a href="kontakt.html">Kontakt</a></li>
+        <li><a href="#produkte">Hofladen</a></li>
+        <li><a href="#heidengraben">Heidengraben</a></li>
+        <li><a href="#kontakt">Kontakt</a></li>
       </ul>
     </div>
   </div>
@@ -220,7 +281,11 @@
   <small id="popup-angebot-zusatz"></small>
 </div>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
 <script src="js/cms-content.js"></script>
 <script src="js/main.js"></script>
+<script src="js/animations.js"></script>
+<script src="js/contact-form.js"></script>
 </body>
 </html>
