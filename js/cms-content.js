@@ -76,6 +76,7 @@
     if (!data || !Array.isArray(data.produkte) || !data.produkte.length) return;
     grid.innerHTML = data.produkte.map(p => `
       <div class="produkt">
+        ${p.bild ? `<img class="produkt__bild" src="${escapeHtml(p.bild)}" width="520" height="390" alt="${escapeHtml(p.titel)}" loading="lazy">` : ''}
         <h3>${escapeHtml(p.titel)}</h3>
         <p>${escapeHtml(p.text)}</p>
       </div>`).join('');

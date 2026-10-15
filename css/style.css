@@ -289,3 +289,7 @@ footer.site-footer{background:var(--stone); border-top:1px solid var(--line); fo
 }
 .offen-streifen b{font-family:var(--font-serif); font-size:1.35rem; letter-spacing:0; text-transform:none; white-space:nowrap;}
 .offen-streifen span:last-child{white-space:nowrap;}
+
+/* ---------- Produkt-Bilder: klein, 4:3, bündig über der Trennlinie ---------- */
+.produkt__bild{width:100%; height:auto; aspect-ratio:4/3; object-fit:cover; margin:0 0 0.8rem; border-radius:2px; border:1px solid var(--line);}
+.bildnachweis{font-family:var(--font-sans); font-size:0.72rem; opacity:0.5; margin:1.6rem 0 0; line-height:1.5;}

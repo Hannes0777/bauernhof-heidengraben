@@ -92,6 +92,10 @@ collections:
               - name: text
                 label: "Kurzbeschreibung"
                 widget: string
+              - name: bild
+                label: "Bild (optional)"
+                widget: image
+                required: false
 
   # ----------------------------------------------------------
   #  SEITENEINSTELLUNGEN

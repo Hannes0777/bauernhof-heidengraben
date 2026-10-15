@@ -1,10 +1,10 @@
 {
   "produkte": [
-    { "titel": "Frische Milch", "text": "Täglich aus dem Kühltank direkt ins Regal." },
-    { "titel": "Freilandeier", "text": "Von Hühnern, die auf der Weide am Wallgraben laufen." },
-    { "titel": "Eierlikör", "text": "Nach Hausrezept, in kleinen Chargen." },
-    { "titel": "Nudeln aus Freilandeiern", "text": "Hausgemacht, mit den eigenen Eiern." },
-    { "titel": "Rindfleischpakete", "text": "Vom eigenen Rind, portioniert." },
-    { "titel": "Geschenkkörbe", "text": "Zusammengestellt aus dem, was gerade frisch ist." }
+    { "titel": "Frische Milch", "text": "Täglich aus dem Kühltank direkt ins Regal.", "bild": "assets/images/produkte/milch.webp" },
+    { "titel": "Freilandeier", "text": "Von Hühnern, die auf der Weide am Wallgraben laufen.", "bild": "assets/images/produkte/eier.webp" },
+    { "titel": "Eierlikör", "text": "Nach Hausrezept, in kleinen Chargen.", "bild": "assets/images/produkte/eierlikoer.webp" },
+    { "titel": "Nudeln aus Freilandeiern", "text": "Hausgemacht, mit den eigenen Eiern.", "bild": "assets/images/produkte/nudeln.webp" },
+    { "titel": "Rindfleischpakete", "text": "Vom eigenen Rind, portioniert.", "bild": "assets/images/produkte/rindfleisch.webp" },
+    { "titel": "Geschenkkörbe", "text": "Zusammengestellt aus dem, was gerade frisch ist.", "bild": "assets/images/produkte/geschenkkorb.webp" }
   ]
 }
