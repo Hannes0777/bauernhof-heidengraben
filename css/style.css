@@ -303,3 +303,6 @@ footer.site-footer{background:var(--stone); border-top:1px solid var(--line); fo
 .stallbuch dt{order:1;}
 .familie .placeholder{margin-top:0; min-height:240px;}
 .story.familie{padding-top:0;}
+
+/* ---------- Hinweis auf Beispieltexte (bis echte Kundendaten da sind) ---------- */
+.beispiel{display:inline-block; margin:0 0 1rem; padding:0.3rem 0.7rem; border:1px dashed var(--iron); color:#d9a077; font-family:var(--font-mono); font-size:0.78rem; letter-spacing:0.04em;}
