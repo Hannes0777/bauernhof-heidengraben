@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Angebots-Section – 3 Vorschläge</title>
+<style>
+:root{
+  --stone:#3a3a34; --stone-dark:#2a2a25; --stone-light:#46463e;
+  --moss:#6e7a52; --moss-dim:#4f5a3a; --moss-light:#9aa67a;
+  --wheat:#e9e2cf; --wheat-dim:rgba(233,226,207,0.72); --iron:#8a5a3a; --line:rgba(233,226,207,0.16);
+  --serif:Georgia,"Iowan Old Style","Palatino Linotype",serif;
+  --sans:-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+  --mono:"Courier New",Courier,monospace;
+}
+*{box-sizing:border-box;}
+body{margin:0;background:#161613;color:var(--wheat);font-family:var(--serif);line-height:1.5;}
+.intro{max-width:900px;margin:0 auto;padding:2rem 1.6rem 0;font-family:var(--sans);}
+.intro h1{font-family:var(--serif);font-size:1.6rem;margin:0 0 .5rem;}
+.intro p{opacity:.8;margin:0;}
+.concept-head{max-width:900px;margin:3rem auto 1rem;padding:0 1.6rem;font-family:var(--sans);}
+.concept-head .tag{font-family:var(--mono);letter-spacing:.1em;text-transform:uppercase;font-size:.78rem;color:var(--moss-light);}
+.concept-head h2{font-family:var(--serif);font-size:1.4rem;margin:.2rem 0 .4rem;}
+.concept-head p{margin:0;opacity:.8;font-size:.95rem;}
+.frame{max-width:1100px;margin:0 auto;background:var(--stone-dark);border:1px solid var(--line);overflow:hidden;}
+
+.label{font-family:var(--mono);letter-spacing:.1em;text-transform:uppercase;font-size:.78rem;color:var(--moss);}
+.hills{height:70px;background:linear-gradient(var(--stone-dark),var(--stone-dark));position:relative;color:var(--moss);}
+.hills svg{width:100%;height:70px;display:block;}
+.brand{padding:.4rem 1.6rem;font-family:var(--mono);font-size:.85rem;letter-spacing:.08em;color:var(--wheat-dim);}
+.hero{padding:2.2rem 1.6rem 3.5rem;}
+.hero-split{display:grid;grid-template-columns:1.1fr .9fr;gap:2.6rem;align-items:center;}
+@media(max-width:760px){.hero-split{grid-template-columns:1fr;}}
+h1.t{font-size:clamp(1.8rem,4.4vw,2.8rem);line-height:1.15;margin:.8rem 0 1.1rem;max-width:18ch;}
+.lead{font-family:var(--sans);font-size:1.05rem;opacity:.88;max-width:52ch;margin:0;}
+.photo{border-radius:4px;overflow:hidden;border:1px solid var(--line);position:relative;}
+.photo img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover;}
+
+/* ===== A: Preisschild am Regal ===== */
+.A .photo-wrap{position:relative;}
+.A .tag-card{
+  position:absolute;left:-1.2rem;bottom:-1.6rem;transform:rotate(-3deg);
+  background:#e9e2cf;color:#2a2a25;padding:1.5rem 1.8rem 1.4rem 2.4rem;max-width:290px;
+  box-shadow:0 10px 24px rgba(0,0,0,.45);
+  clip-path:polygon(14% 0,100% 0,100% 100%,14% 100%,0 50%);
+  font-family:var(--sans);
+}
+.A .tag-card::before{content:"";position:absolute;left:14px;top:50%;width:11px;height:11px;margin-top:-5.5px;border-radius:50%;background:var(--stone-dark);box-shadow:inset 0 0 0 2px #b9b19b;}
+.A .tag-card .label{color:var(--iron);font-size:.75rem;}
+.A .tag-card b{display:block;font-family:var(--serif);font-size:2rem;line-height:1.1;margin:.3rem 0 .3rem;color:#2a2a25;}
+.A .tag-card small{display:block;font-size:.95rem;color:#5b5648;}
+.A .hero{padding-bottom:4.5rem;}
+@media(max-width:760px){.A .tag-card{left:.6rem;bottom:-1.4rem;max-width:80%;}}
+
+/* ===== B: Vollbreites Band ganz oben ===== */
+.B .band{
+  background:var(--iron);color:#f4ecd8;display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:.4rem 1.6rem;
+  padding:1.1rem 1.6rem;text-align:center;font-family:var(--sans);
+  border-bottom:3px solid #6d4429;
+}
+.B .band .label{color:#f4ecd8;opacity:.85;}
+.B .band b{font-family:var(--serif);font-size:clamp(1.4rem,3.4vw,2.1rem);line-height:1.15;}
+.B .band small{font-size:1rem;opacity:.9;}
+.B .band .pfeil{font-family:var(--mono);font-size:1.4rem;}
+
+/* ===== C: Aushang als Hauptbühne ===== */
+.C .hero-split{grid-template-columns:1fr 1fr;}
+@media(max-width:760px){.C .hero-split{grid-template-columns:1fr;}}
+.C .aushang{
+  background:var(--stone);border:2px solid var(--moss-dim);position:relative;padding:2rem 1.8rem 2rem;
+  font-family:var(--sans);
+}
+.C .aushang::before,.C .aushang::after{content:"";position:absolute;top:-9px;width:16px;height:16px;border-radius:50%;background:var(--iron);box-shadow:inset 0 0 0 3px #6d4429;}
+.C .aushang::before{left:22px;} .C .aushang::after{right:22px;}
+.C .aushang .label{color:var(--iron);}
+.C .aushang b{display:block;font-family:var(--serif);font-size:clamp(2.2rem,5.6vw,3.6rem);line-height:1.02;margin:.6rem 0 .8rem;letter-spacing:-.01em;}
+.C .aushang .rule{height:0;border-top:2px dashed var(--line);margin:.6rem 0 .9rem;}
+.C .aushang small{font-size:1.1rem;opacity:.85;}
+.C .aushang .preis{font-family:var(--mono);color:var(--moss-light);margin-top:.6rem;display:block;}
+.C .mini-photo{margin-top:1.2rem;}
+.C .mini-photo img{aspect-ratio:16/7;}
+</style>
+</head>
+<body>
+
+<div class="intro">
+  <h1>Angebots-Section: 3 Richtungen</h1>
+  <p>Problem: Das Angebot sitzt aktuell als kleiner Kasten <em>unter</em> dem Hero und geht unter. Alle drei Varianten zeigen das Angebot sofort beim Öffnen der Seite, ohne Scrollen. Beispieltext ist der echte Eintrag aus dem CMS.</p>
+</div>
+
+<!-- ============ A ============ -->
+<div class="concept-head">
+  <span class="tag">Variante A</span>
+  <h2>Preisschild am Regal</h2>
+  <p>Das Angebot hängt als handgeschriebenes Preisschild über der Ecke des Hofladen-Fotos. Greift die Preistafel aus dem Laden auf. Direkt im Blickfeld, hebt sich durch Helligkeit ab, wirkt nicht wie Werbung.</p>
+</div>
+<div class="frame A">
+  <div class="hills"><svg viewBox="0 0 1000 70" preserveAspectRatio="none"><path d="M0,60 Q120,20 240,45 T480,35 Q600,10 720,40 T1000,30 L1000,70 L0,70Z" fill="currentColor" opacity=".55"/></svg></div>
+  <div class="brand">HOFLADEN AM HEIDENGRABEN</div>
+  <section class="hero">
+    <div class="hero-split">
+      <div>
+        <p class="label">Hofladen Grabenstetten · Selbstbedienung</p>
+        <h1 class="t">Niemand steht an der Kasse. Trotzdem stimmt die Rechnung, seit Jahren.</h1>
+        <p class="lead">Unser Hofladen ist Tag und Nacht offen, ganz ohne Personal. Man nimmt sich, was man braucht, und legt das Geld in die Kasse.</p>
+      </div>
+      <div class="photo-wrap">
+        <div class="photo"><img src="../assets/images/hofladen-regal.webp" alt="Hofladen Regal"></div>
+        <div class="tag-card">
+          <span class="label">Fundstück der Woche</span>
+          <b>Frische Eierlikör-Charge</b>
+          <small>nur solange der Vorrat reicht · bis 31.12.</small>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ============ B ============ -->
+<div class="concept-head">
+  <span class="tag">Variante B</span>
+  <h2>Eisenband ganz oben</h2>
+  <p>Volle Breite, kräftige Eisen-Farbe (der Akzent aus dem Design), allererstes Element der Seite, noch vor Hügeln und Headline. Kann man nicht übersehen, auch nicht auf dem Handy. Klick springt zu den Produkten. Verschwindet automatisch nach Ablaufdatum.</p>
+</div>
+<div class="frame B">
+  <div class="band">
+    <span class="label">Fundstück der Woche</span>
+    <b>Frische Eierlikör-Charge</b>
+    <small>nur solange der Vorrat reicht · bis 31.12.</small>
+    <span class="pfeil">↓</span>
+  </div>
+  <div class="hills"><svg viewBox="0 0 1000 70" preserveAspectRatio="none"><path d="M0,60 Q120,20 240,45 T480,35 Q600,10 720,40 T1000,30 L1000,70 L0,70Z" fill="currentColor" opacity=".55"/></svg></div>
+  <div class="brand">HOFLADEN AM HEIDENGRABEN</div>
+  <section class="hero">
+    <div class="hero-split">
+      <div>
+        <p class="label">Hofladen Grabenstetten · Selbstbedienung</p>
+        <h1 class="t">Niemand steht an der Kasse. Trotzdem stimmt die Rechnung, seit Jahren.</h1>
+        <p class="lead">Unser Hofladen ist Tag und Nacht offen, ganz ohne Personal. Man nimmt sich, was man braucht, und legt das Geld in die Kasse.</p>
+      </div>
+      <div class="photo"><img src="../assets/images/hofladen-regal.webp" alt="Hofladen Regal"></div>
+    </div>
+  </section>
+</div>
+
+<!-- ============ C ============ -->
+<div class="concept-head">
+  <span class="tag">Variante C</span>
+  <h2>Aushang als Hauptbühne</h2>
+  <p>Das Angebot bekommt die ganze linke Hero-Hälfte: Der Produktname steht in Riesenschrift, wie ein Aushang am Hoftor (mit zwei Nägeln oben). Die bisherige Headline rutscht darunter. Das ist die lauteste Variante. Wenn gerade kein Angebot läuft, springt der normale Hero zurück.</p>
+</div>
+<div class="frame C">
+  <div class="hills"><svg viewBox="0 0 1000 70" preserveAspectRatio="none"><path d="M0,60 Q120,20 240,45 T480,35 Q600,10 720,40 T1000,30 L1000,70 L0,70Z" fill="currentColor" opacity=".55"/></svg></div>
+  <div class="brand">HOFLADEN AM HEIDENGRABEN</div>
+  <section class="hero">
+    <div class="hero-split">
+      <div class="aushang">
+        <span class="label">Fundstück der Woche</span>
+        <b>Frische Eierlikör-Charge</b>
+        <div class="rule"></div>
+        <small>nur solange der Vorrat reicht · bis 31.12.</small>
+        <span class="preis">→ im Regal links, Kasse des Vertrauens</span>
+      </div>
+      <div>
+        <p class="label">Hofladen Grabenstetten · Selbstbedienung</p>
+        <h1 class="t">Niemand steht an der Kasse. Trotzdem stimmt die Rechnung.</h1>
+        <div class="photo mini-photo"><img src="../assets/images/hofladen-regal.webp" alt="Hofladen Regal"></div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<div class="intro" style="padding-bottom:3rem;">
+  <p><b>Meine Empfehlung:</b> B + A kombiniert wäre möglich, aber eins reicht. Für „muss direkt sichtbar sein“ ist <b>B</b> am sichersten, <b>C</b> am auffälligsten, <b>A</b> am charaktervollsten.</p>
+</div>
+</body>
+</html>

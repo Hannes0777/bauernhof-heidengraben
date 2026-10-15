@@ -14,20 +14,19 @@
   gsap.registerPlugin(ScrollTrigger);
 
   // ── Hero: Elemente kommen gestaffelt rein ────────────────
-  gsap.from('.hero .label, .hero h1, .hero .lead, .hero-split .photo', {
+  gsap.from('.hero .label, .hero .offen, .hero h1, .hero .lead, .hero-split .photo', {
     opacity: 0,
     y: 26,
     duration: 0.9,
     stagger: 0.12,
     ease: 'power2.out',
   });
-  gsap.from('.hero .angebot', {
+  gsap.from('.hero .aushang-wrap', {
     opacity: 0,
     y: 20,
-    scale: 0.96,
     duration: 0.7,
-    delay: 0.5,
-    ease: 'back.out(1.6)',
+    delay: 0.4,
+    ease: 'power2.out',
   });
 
   // ── Dezenter Parallax auf der Hügellandschaft im Header ──
