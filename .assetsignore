@@ -7,3 +7,5 @@ _worker.js
 wrangler.jsonc
 .assetsignore
 .dev.vars
+.git/
+.git
