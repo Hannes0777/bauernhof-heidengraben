@@ -14,7 +14,7 @@
   gsap.registerPlugin(ScrollTrigger);
 
   // ── Hero: Elemente kommen gestaffelt rein ────────────────
-  gsap.from('.hero .label, .hero .offen, .hero h1, .hero .lead, .hero-split .photo', {
+  gsap.from('.hero .label, .hero h1, .hero .lead, .hero-split .photo', {
     opacity: 0,
     y: 26,
     duration: 0.9,
