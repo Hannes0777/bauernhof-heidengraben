@@ -278,25 +278,14 @@ footer.site-footer{background:var(--stone); border-top:1px solid var(--line); fo
   .aushang .label{padding-right:2.6rem;}
 }
 
-/* ---------- 24-h-Streifen: Stundenlineal, alle 24 Striche = durchgehend offen ---------- */
+/* ---------- 24-h-Streifen: schmal, gestrichelter Innenrahmen wie beim Aushang ---------- */
 .offen-streifen{
   width:calc(100% - 3.2rem); max-width:calc(var(--maxw) - 3.2rem); margin:0 auto;
   background:var(--moss-light); color:var(--stone-dark);
   outline:1px dashed rgba(42,42,37,0.5); outline-offset:-4px;
-  display:flex; flex-wrap:wrap; align-items:center; gap:0.2rem 1.2rem;
+  display:flex; flex-wrap:wrap; align-items:center; justify-content:center; gap:0.2rem 1.2rem;
   padding:0.5rem 1.4rem; line-height:1.2;
   font-family:var(--font-mono); text-transform:uppercase; letter-spacing:0.1em; font-size:0.74rem; font-weight:700;
 }
 .offen-streifen b{font-family:var(--font-serif); font-size:1.35rem; letter-spacing:0; text-transform:none; white-space:nowrap;}
-.offen-streifen .stunden{
-  flex:1 1 120px; height:16px; min-width:120px;
-  background:
-    linear-gradient(90deg, var(--stone-dark) 2px, transparent 2px) 0 100% / calc(100% / 4) 100% repeat-x,
-    linear-gradient(90deg, var(--stone-dark) 1px, transparent 1px) 0 100% / calc(100% / 24) 55% repeat-x;
-  border-bottom:2px solid var(--stone-dark);
-}
 .offen-streifen span:last-child{white-space:nowrap;}
-@media (max-width:640px){
-  .offen-streifen{justify-content:space-between;}
-  .offen-streifen .stunden{order:3; flex-basis:100%;}
-}
