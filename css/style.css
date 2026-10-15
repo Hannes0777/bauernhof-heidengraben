@@ -186,8 +186,8 @@ section p{font-family:var(--font-sans); font-size:0.98rem;}
 @media (max-width:760px){.grid-produkte{grid-template-columns:1fr 1fr;}}
 @media (max-width:480px){.grid-produkte{grid-template-columns:1fr;}}
 .produkt{border-top:2px solid var(--moss); padding-top:0.9rem;}
-.produkt h3{margin:0 0 0.4rem; font-size:1.02rem; font-family:var(--font-serif);}
-.produkt p{margin:0; font-size:0.9rem; opacity:0.8;}
+.produkt h3{margin:0 0 0.5rem; font-size:1.5rem; line-height:1.2; font-family:var(--font-serif);}
+.produkt p{margin:0; font-size:1.08rem; line-height:1.5; opacity:0.88;}
 
 /* ---------- Immer-offen-Block ---------- */
 .immer-offen{
@@ -291,5 +291,5 @@ footer.site-footer{background:var(--stone); border-top:1px solid var(--line); fo
 .offen-streifen span:last-child{white-space:nowrap;}
 
 /* ---------- Produkt-Bilder: klein, 4:3, bündig über der Trennlinie ---------- */
-.produkt__bild{width:100%; height:auto; aspect-ratio:4/3; object-fit:cover; margin:0 0 0.8rem; border-radius:2px; border:1px solid var(--line);}
+.produkt__bild{width:100%; height:auto; aspect-ratio:2/1; object-fit:cover; margin:0 0 1rem; border-radius:2px; border:1px solid var(--line);}
 .bildnachweis{font-family:var(--font-sans); font-size:0.72rem; opacity:0.5; margin:1.6rem 0 0; line-height:1.5;}
