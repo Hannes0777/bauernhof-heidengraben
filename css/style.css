@@ -280,6 +280,7 @@ footer.site-footer{background:var(--stone); border-top:1px solid var(--line); fo
 
 /* ---------- 24-h-Streifen: schmal, direkt unter Header/Nav ---------- */
 .offen-streifen{
+  width:calc(100% - 3.2rem); max-width:calc(var(--maxw) - 3.2rem); margin:0 auto;
   background:var(--moss-light); color:var(--stone-dark); text-align:center;
   font-family:var(--font-mono); text-transform:uppercase; letter-spacing:0.08em; font-size:0.82rem;
   padding:0.55rem 1.2rem; line-height:1.4;
